@@ -1,7 +1,6 @@
 class Asas: 
 
     def get_images(asas_id): 
-        #import urllib
         from PIL import Image
         import requests
 
@@ -9,9 +8,15 @@ class Asas:
         map = Image.open(requests.get(map_link, stream=True).raw)
         
         lightcurve_link = 'http://www.astrouw.edu.pl/cgi-asas/asas_plot_raw_all?'+asas_id+',asas3,0,500,0'
-        #lightcurve = Image.open(requests.get(lightcurve_link, stream=True).raw).convert('RGB')
+        lightcurve_gif = Image.open(requests.get(lightcurve_link, stream=True).raw)
+        
+        pallete = lightcurve_gif.getpalette()
+        
+        lightcurve_gif.putpalette(pallete)
+        lightcurve = Image.new("RGBA", lightcurve_gif.size)
+        lightcurve.paste(lightcurve_gif)
 
-        return map#, lightcurve
+        return map, lightcurve
 
     def get_lightcurve(): 
         print('hi')
