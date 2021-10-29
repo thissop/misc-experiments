@@ -18,8 +18,13 @@ class Asas:
 
         return map, lightcurve
 
-    def get_lightcurve(): 
-        print('hi')
+    def get_lightcurve(asas_id): 
+        import requests
+
+        lightcurve_link = 'http://www.astrouw.edu.pl/cgi-asas/asas_cgi_get_data?'+asas_id+',asas3'
+        raw = requests.get(lightcurve_link)
+        return raw
+
 
     def get_table(): 
         print('hi')
