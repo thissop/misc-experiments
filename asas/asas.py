@@ -1,5 +1,5 @@
 class Asas: 
-
+    '''
     def get_images(asas_id): 
         from PIL import Image
         import requests
@@ -17,7 +17,7 @@ class Asas:
         lightcurve.paste(lightcurve_gif)
 
         return map, lightcurve
-
+    '''
     def get_lightcurve(asas_id): 
         import requests
 
@@ -26,5 +26,5 @@ class Asas:
         return raw
 
 
-    def get_table(): 
-        print('hi')
+    #def get_table(): 
+    #    print('hi')
