@@ -16,5 +16,5 @@ class Asas:
     def get_lightcurve(): 
         print('hi')
 
-    def get_data(): 
+    def get_table(): 
         print('hi')
