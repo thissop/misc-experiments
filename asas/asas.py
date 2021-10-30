@@ -1,5 +1,5 @@
 class Asas: 
-    '''
+    
     def get_images(asas_id): 
         from PIL import Image
         import requests
@@ -28,3 +28,5 @@ class Asas:
 
     #def get_table(): 
     #    print('hi')
+
+    '''
