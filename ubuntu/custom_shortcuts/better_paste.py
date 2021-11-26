@@ -16,7 +16,7 @@ cleaned_path = cleaned_path.replace('x-special/nautilus-clipboard' ,'')
 cleaned_path = cleaned_path.replace('copy','')
 cleaned_path = cleaned_path.replace('file://','')
 cleaned_path = cleaned_path.replace('***','')
-clipboard.copy(cleaned_path)
-
+#clipboard.copy(cleaned_path)
+clipboard.copy('he7y')
 
 #pyperclip.copy(cleaned_path)
