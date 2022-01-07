@@ -1,0 +1,2 @@
+imort xspec
+fromxspec import *
